@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Cache;
 
 namespace Inheritance
 {
@@ -34,6 +35,33 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Birds Turkey = new Birds()
+            {
+                Name="Turkey",
+                Age=2,
+                Legs=2,
+                IsColdblooded=false,
+                HasBones=true,
+                HasFeather=true,
+                Wings=2,
+                Type="domestic",
+                
+            };
+           
+            Console.WriteLine(Turkey.Name + " is " + Turkey.Age + " years old and has " + Turkey.Legs + " legs and is  of type " + Turkey.Type);
+            Reptile Lezard = new Reptile()
+            {
+                Name = "lezard",
+                Age = 21,
+                Legs = 4,
+                HasBones = true,
+                HasScales = true,
+                Environment = "wetland",
+                Defense = "bite",
+            };
+            Console.WriteLine(Lezard.Name + " is a reptile that live in " + Lezard.Environment + " has legs of " + Lezard.Legs + " and has an age of " + Lezard.Age);
         }
+
+
     }
 }
